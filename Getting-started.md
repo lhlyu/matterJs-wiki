@@ -8,17 +8,11 @@ Download the [latest release](https://github.com/liabru/matter-js/releases) and 
 
 For the latest features try the [edge version (master)](https://raw.github.com/liabru/matter-js/master/build/matter.js), but it may not be fully stable.
 
-##### Or install using [Bower](http://bower.io/)
-
-    install matter-js
-
-##### Or install using [NPM](https://www.npmjs.org/)
-
-    npm install matter-js
+You can also install using the package managers [Bower](http://bower.io/search/?q=matter-js) and [NPM](https://www.npmjs.org/package/matter-js).
 
 ### Usage example
 
-Here is a minimal example to get you started.
+The following is a minimal example to get you started:
 
 ```javascript
 // Matter.js module aliases
@@ -51,4 +45,4 @@ Check out the [demo page](http://brm.io/matter-js-demo/) for more examples and t
 ### Documentation
 
 See the latest [Matter.js API Docs](http://brm.io/matter-js-docs/) for detailed information on the API.
-If you're using the [edge version (master)](https://raw2.github.com/liabru/matter-js/master/build/matter.js) then see the [API Docs (master)](http://brm.io/matter-js-docs-master/).
+<br>If you're using the [edge version (master)](https://raw2.github.com/liabru/matter-js/master/build/matter.js) then see the [API Docs (master)](http://brm.io/matter-js-docs-master/).
