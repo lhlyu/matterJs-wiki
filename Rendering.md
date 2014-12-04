@@ -1,4 +1,4 @@
-> The library comes packaged with two built in render modules, or you can create your own.
+> The library comes packaged with a render module, or simply create your own.
 
 1. [Using a built in renderer](#using-a-built-in-renderer)
     1. [Matter.Render](#matterrender)
