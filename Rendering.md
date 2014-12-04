@@ -1,4 +1,4 @@
-> The library comes packaged with two simple render modules for displaying worlds [Matter.Render](http://brm.io/matter-js-docs/classes/Render.html) and [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html).
+> The library comes packaged with two built in render modules, or you can create your own.
 
 1. [Using a built in renderer](#using-a-built-in-renderer)
     1. [Matter.Render](#matterrender)
