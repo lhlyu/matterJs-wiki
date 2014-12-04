@@ -1,6 +1,13 @@
-The library comes packaged with two simple render modules for displaying worlds [Matter.Render](http://brm.io/matter-js-docs/classes/Render.html) and [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html).
+> The library comes packaged with two simple render modules for displaying worlds [Matter.Render](http://brm.io/matter-js-docs/classes/Render.html) and [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html).
 
-## Matter.Render
+1. [Using a built in renderer](#using-a-built-in-renderer)
+    1. [Matter.Render](#matterrender)
+    1. [Matter.RenderPixi](#matterrenderpixi)
+1. [Using a custom renderer](#using-a-custom-renderer)
+
+## Using a built in renderer
+
+#### Matter.Render
 
 The default renderer is [Matter.Render](http://brm.io/matter-js-docs/classes/Render.html) which uses a simple HTML5 canvas in immediate mode. It has built in support for both primitive and sprite based rendering of bodies in 2d.
 
@@ -39,7 +46,7 @@ Engine.create({
 })
 ```
 
-## Matter.RenderPixi
+#### Matter.RenderPixi
 
 An alternate renderer [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html) is provided as an example of using [Pixi.js](http://www.pixijs.com/) to render a world using WebGL and a scene graph. The features available should match those of `Matter.Render` although sometimes there may be implementation differences.
 
