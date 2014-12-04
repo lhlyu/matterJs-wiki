@@ -3,6 +3,7 @@
 1. [Using a built in renderer](#using-a-built-in-renderer)
     1. [Matter.Render](#matterrender)
     1. [Matter.RenderPixi](#matterrenderpixi)
+    1. [Render options](#render-options)
 1. [Using a custom renderer](#using-a-custom-renderer)
 
 ## Using a built in renderer
@@ -14,6 +15,21 @@ The default renderer is [Matter.Render](http://brm.io/matter-js-docs/classes/Ren
 When you use `Engine.create(element)` a `Matter.Render` instance will be created for you and it will automatically insert a canvas into the page at the specified `element`.
 
 Following this calling `Engine.run(engine)` will spawn the built in game loop routine, which will automatically manage updating the engine and calling the renderer at the appropriate times.
+
+#### Matter.RenderPixi
+
+An alternate renderer [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html) is provided as an example of using [Pixi.js](http://www.pixijs.com/) to render a world using WebGL and a scene graph. The features available should match those of `Matter.Render` although sometimes there may be implementation differences.
+
+To make use of this module you must pass it to your engine at its creation:
+
+```js
+Engine.create({
+    render: {
+        element: document.body,
+        controller: Matter.RenderPixi
+    }
+})
+```
 
 #### Render options
 
@@ -42,21 +58,6 @@ Engine.create({
             showIds: false,
             showShadows: false
         }
-    }
-})
-```
-
-#### Matter.RenderPixi
-
-An alternate renderer [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html) is provided as an example of using [Pixi.js](http://www.pixijs.com/) to render a world using WebGL and a scene graph. The features available should match those of `Matter.Render` although sometimes there may be implementation differences.
-
-To make use of this module you must pass it to your engine at its creation:
-
-```js
-Engine.create({
-    render: {
-        element: document.body,
-        controller: Matter.RenderPixi
     }
 })
 ```
