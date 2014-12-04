@@ -1,3 +1,9 @@
+> A simple guide to getting started with Matter.js
+
+1. [Install](#install)
+1. [Usage examples](#usage-examples)
+1. [Documentation](#documentation)
+
 ### Install
 
 Download the [latest release](https://github.com/liabru/matter-js/releases) and include the script in your web page:
@@ -13,7 +19,7 @@ You can also install using the package managers [Bower](http://bower.io/search/?
     bower install matter-js
     npm install matter-js
 
-### Usage example
+### Usage examples
 
 The following is a minimal example to get you started:
 
