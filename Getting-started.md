@@ -1,6 +1,6 @@
 ### Install
 
-Download the [latest release](https://github.com/liabru/matter-js/releases) and include the script in your web page e.g.
+Download the [latest release](https://github.com/liabru/matter-js/releases) and include the script in your web page:
 
 ```html
 <script src="matter-0.8.0.js" type="text/javascript"></script>
@@ -9,6 +9,9 @@ Download the [latest release](https://github.com/liabru/matter-js/releases) and 
 For the latest features try the [edge version (master)](https://raw.github.com/liabru/matter-js/master/build/matter.js), but it may not be fully stable.
 
 You can also install using the package managers [Bower](http://bower.io/search/?q=matter-js) and [NPM](https://www.npmjs.org/package/matter-js).
+
+    bower install matter-js
+    npm install matter-js
 
 ### Usage example
 
