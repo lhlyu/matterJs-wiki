@@ -33,6 +33,8 @@ Engine.create({
 })
 ```
 
+Note that you must include [Pixi.js](http://www.pixijs.com/) in your page to use `Matter.RenderPixi`.
+
 #### Render options
 
 A number of options may be passed to the renderer:
