@@ -16,6 +16,8 @@ When you use `Engine.create(element)` a `Matter.Render` instance will be created
 
 Following this calling `Engine.run(engine)` will spawn the built in game loop routine, which will automatically manage updating the engine and calling the renderer at the appropriate times.
 
+By default this renderer will only show bodies as wireframes (outlines). This is useful for testing and debugging, but to enable full solid rendering (and sprites if you are using them) you must set `render.options.wirefames = false`.
+
 #### Matter.RenderPixi
 
 An alternate renderer [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html) is provided as an example of using [Pixi.js](http://www.pixijs.com/) to render a world using WebGL and a scene graph. The features available should match those of `Matter.Render` although sometimes there may be implementation differences.
