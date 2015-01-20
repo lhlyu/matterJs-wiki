@@ -5,6 +5,7 @@
     1. [Matter.RenderPixi](#matterrenderpixi)
     1. [Render options](#render-options)
 1. [Using a custom renderer](#using-a-custom-renderer)
+1. [Using a custom game loop](#using-a-custom-game-loop)
 
 ## Using a built in renderer
 
@@ -30,7 +31,7 @@ Engine.create({
         element: document.body,
         controller: Matter.RenderPixi
     }
-})
+});
 ```
 
 Note that you must include [Pixi.js](http://www.pixijs.com/) in your page to use `Matter.RenderPixi`.
@@ -63,19 +64,31 @@ Engine.create({
             showShadows: false
         }
     }
-})
+});
 ```
 
 ## Using a custom renderer
 
 While the built in renderers are useful for early development, if you need to do any kind of complex rendering effects you will need a custom renderer.
 
-The easiest way to do this first use the [edge build](https://github.com/liabru/matter-js/blob/master/build/matter.js), then to copy [Render.js](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) and customise it, giving it a new module name.
+Use the latest [edge build](https://github.com/liabru/matter-js/blob/master/build/matter.js) of Matter.js if you need this, as rendering has since been better decoupled.
 
 Currently it is required that your renderer module (e.g. `MyRenderer`) at least defines the following:
 
-- a `create` function, that returns an object that includes the property `controller = MyRenderer`
-- a `world` function, which is to be called on every step by the engine
+- a `create` function, that returns an object that at least includes the property `controller = MyRenderer`
+- a `world` function, which is to be called on every step by the engine and contains your rendering code
+
+```js
+var MyRenderer = {
+	create: function() {
+		return { controller: MyRenderer };
+	},
+
+	world: function(engine) {
+		// your code here to render engine.world
+	}
+};
+```
 
 To then use your custom renderer you must pass it to your engine at its creation where `MyRenderer` is the name of your new render module:
 
@@ -84,7 +97,27 @@ Engine.create({
     render: {
         controller: MyRenderer
     }
-})
+});
 ```
 
+Take a look at [Render.js](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) to see how the built in renderer works. It may be helpful to use this module as the basis for your own.
+
 (this is to be made more straight forward in future versions!)
+
+## Using a custom game loop
+
+The engine includes a game loop utility, [Engine.run](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js#L35), to get you started straight away. It automatically handles updating the engine, calling key events and calling the renderer at the correct times.
+
+But if you already have a game loop you wish to use, it is very easy to tick the physics engine when ever you need to, like this:
+
+```js
+Engine.update(engine, delta, correction);
+```
+
+Where:
+
+- `engine` is your `Matter.Engine` to update the state of
+- `delta` is the timestep in ms (e.g. 60FPS = 1000/60 = 16.666)
+- `correction` is the timestep correction factor as described in [Time Corrected Verlet](http://lonesock.net/article/verlet.html) (a value of `1` means no correction)
+
+Note that you may also need to implement [engine events](http://brm.io/matter-js-docs/classes/Engine.html#events), e.g. `beforeTick`, `tick` and `afterTick` etc for all features to work correctly. See the code for [Matter.Runner](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js#L57-L112) on when to fire them.
