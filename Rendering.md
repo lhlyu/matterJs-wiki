@@ -70,15 +70,21 @@ Engine.create({
 
 While the built in renderers are useful for early development, if you need to do any kind of complex rendering effects you will need a custom renderer.
 
-The easiest way to do this is to simply copy [Render.js](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) and customise it, giving it a new module name.
+The easiest way to do this first use the [edge build](https://github.com/liabru/matter-js/blob/master/build/matter.js), then to copy [Render.js](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) and customise it, giving it a new module name.
+
+Currently it is required that your renderer module (e.g. `MyRenderer`) at least defines the following:
+
+- a `create` function, that returns an object that includes the property `controller = MyRenderer`
+- a `world` function, which is to be called on every step by the engine
 
 To then use your custom renderer you must pass it to your engine at its creation where `MyRenderer` is the name of your new render module:
 
 ```js
 Engine.create({
     render: {
-        element: document.body,
         controller: MyRenderer
     }
 })
 ```
+
+(this is to be made more straight forward in future versions!)
