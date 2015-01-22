@@ -6,10 +6,10 @@
 
 ### Install
 
-Download the [latest release](https://github.com/liabru/matter-js/releases) and include the script in your web page:
+Download the [edge build (master)](https://github.com/liabru/matter-js/blob/master/build/matter.js) or get a [stable release](https://github.com/liabru/matter-js/releases) and include the script in your web page:
 
 ```html
-<script src="matter-0.8.0.js" type="text/javascript"></script>
+<script src="matter.js" type="text/javascript"></script>
 ```
 
 For the latest features try the [edge version (master)](https://raw.github.com/liabru/matter-js/master/build/matter.js), but it may not be fully stable.
