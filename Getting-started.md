@@ -51,6 +51,10 @@ If you don't, check the browser console to see if there are any errors.
 
 Check out the [demo page](http://brm.io/matter-js-demo/) for more examples and then refer to [Demo.js](https://github.com/liabru/matter-js/blob/master/demo/js/Demo.js) to see how they work. Some of the demos are also available on [codepen](http://codepen.io/collection/Fuagy/), where you can easily experiment with them.
 
+### Rendering
+
+Matter.js includes a sample renderer, but this is optional and it's easy to use your own.
+See the [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) wiki page for information.
 ### Documentation
 
 See the latest [Matter.js API Docs](http://brm.io/matter-js-docs/) for detailed information on the API.
