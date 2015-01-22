@@ -54,7 +54,8 @@ Check out the [demo page](http://brm.io/matter-js-demo/) for more examples and t
 ### Rendering
 
 Matter.js includes a sample renderer, but this is optional and it's easy to use your own.
-See the [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) wiki page for information.
+See the [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) wiki page for information, including on how to use your own custom game loop.
+
 ### Documentation
 
 See the latest [Matter.js API Docs](http://brm.io/matter-js-docs/) for detailed information on the API.
