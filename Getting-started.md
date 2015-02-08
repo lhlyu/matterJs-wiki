@@ -44,7 +44,7 @@ World.add(engine.world, [boxA, boxB, ground]);
 Engine.run(engine);
 ```
 
-Include the above script into a page that has Matter.js installed and then open the page in your browser. Make sure the script is at the bottom of the page (or otherwise called after DOM is ready).
+Include the above script into a page that has Matter.js installed and then open the page in your browser. Make sure the script is at the bottom of the page (or called on the window load event, or after DOM is ready).
 
 Hopefully you will see two rectangle bodies fall and then hit each other as they land on the ground. 
 If you don't, check the browser console to see if there are any errors.
