@@ -1,7 +1,7 @@
 > Examples of how to run a Matter.js engine
 
 1. [Runner example](#runner-example)
-1. [Using Matter.Runner](#using-matter-runner)
+1. [Using Matter.Runner](#using-matterrunner)
     1. [Documentation](#documentation)
     1. [Usage](#usage)
     1. [Options](#options)
