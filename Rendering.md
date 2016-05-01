@@ -1,7 +1,7 @@
 > Examples of how to render a Matter.js engine
 
 1. [Renderer example](#renderer-example)
-1. [Using Matter.Render](#using-matter-render)
+1. [Using Matter.Render](#using-matterrender)
     1. [Documentation](#documentation)
     1. [Usage](#usage)
     1. [Options](#options)
