@@ -1,7 +1,8 @@
 > A simple guide to getting started with Matter.js
 
 1. [Install](#install)
-1. [Usage examples](#usage-examples)
+1. [Usage examples](#usage-example)
+1. [Running and Rendering](#running-and-rendering)
 1. [Documentation](#documentation)
 
 ### Install
@@ -19,18 +20,25 @@ You can also install using the package managers [Bower](http://bower.io/search/?
     bower install matter-js
     npm install matter-js
 
-### Usage examples
+### Usage example
 
-The following is a minimal example to get you started:
+The following is a minimal example using the built in renderer and runner to get you started:
 
 ```javascript
-// Matter.js module aliases
+// module aliases
 var Engine = Matter.Engine,
+    Render = Matter.Render,
     World = Matter.World,
     Bodies = Matter.Bodies;
 
-// create a Matter.js engine
-var engine = Engine.create(document.body);
+// create an engine
+var engine = Engine.create();
+
+// create a renderer
+var render = Render.create({
+    element: document.body,
+    engine: engine
+});
 
 // create two boxes and a ground
 var boxA = Bodies.rectangle(400, 200, 80, 80);
@@ -42,6 +50,9 @@ World.add(engine.world, [boxA, boxB, ground]);
 
 // run the engine
 Engine.run(engine);
+
+// run the renderer
+Render.run(render);
 ```
 
 Include the above script into a page that has Matter.js installed and then open the page in your browser. Make sure the script is at the bottom of the page (or called on the window load event, or after DOM is ready).
@@ -49,14 +60,13 @@ Include the above script into a page that has Matter.js installed and then open 
 Hopefully you will see two rectangle bodies fall and then hit each other as they land on the ground. 
 If you don't, check the browser console to see if there are any errors.
 
-Check out the [demo page](http://brm.io/matter-js-demo/) for more examples and then refer to [Demo.js](https://github.com/liabru/matter-js/blob/master/demo/js/Demo.js) to see how they work. Some of the demos are also available on [codepen](http://codepen.io/collection/Fuagy/), where you can easily experiment with them.
+Check out the [demo page](http://brm.io/matter-js-demo/) for more examples and then refer to [Demo.js](https://github.com/liabru/matter-js/blob/master/demo/js/Demo.js) to see how they work. Some of the demos are also available on [codepen](http://codepen.io/collection/Fuagy/), where you can easily experiment with them (but they may not always be completely up to date).
 
-### Rendering
+### Running and Rendering
 
-Matter.js includes a sample renderer, but this is optional and it's easy to use your own.
-See the [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) wiki page for information, including on how to use your own custom game loop.
+The above example uses the built in renderer and runner, but these are both optional and it's easy to render in your own way and use your own game loop.
+See the [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) and [Running](https://github.com/liabru/matter-js/wiki/Running) wiki pages for information.
 
 ### Documentation
 
-See the latest [Matter.js API Docs](http://brm.io/matter-js-docs/) for detailed information on the API.
-<br>If you're using the [edge version (master)](https://raw2.github.com/liabru/matter-js/master/build/matter.js) then see the [API Docs (master)](http://brm.io/matter-js-docs-master/).
+See the [Matter.js Documentation](http://brm.io/matter-js/docs/) for detailed information on the API.
