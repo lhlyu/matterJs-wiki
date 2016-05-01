@@ -1,123 +1,123 @@
-> The library comes packaged with a render module, or simply create your own.
+> Examples of how to render a Matter.js engine
 
-1. [Using a built in renderer](#using-a-built-in-renderer)
-    1. [Matter.Render](#matterrender)
-    1. [Matter.RenderPixi](#matterrenderpixi)
-    1. [Render options](#render-options)
-1. [Using a custom renderer](#using-a-custom-renderer)
-1. [Using a custom game loop](#using-a-custom-game-loop)
+1. [Renderer example](#renderer-example)
+1. [Using Matter.Render](#using-matter-render)
+    1. [Documentation](#documentation)
+    1. [Usage](#usage)
+    1. [Options](#options)
 
-## Using a built in renderer
+## Renderer example
 
-#### Matter.Render
-
-The default renderer is [Matter.Render](http://brm.io/matter-js-docs/classes/Render.html) which uses a simple HTML5 canvas in immediate mode. It has built in support for both primitive and sprite based rendering of bodies in 2d.
-
-When you use `Engine.create(element)` a `Matter.Render` instance will be created for you and it will automatically insert a canvas into the page at the specified `element`.
-
-Following this calling `Engine.run(engine)` will spawn the built in game loop routine, which will automatically manage updating the engine and calling the renderer at the appropriate times.
-
-By default this renderer will only show bodies as wireframes (outlines). This is useful for testing and debugging, but to enable full solid rendering (and sprites if you are using them) you must set `render.options.wireframes = false`.
-
-#### Matter.RenderPixi
-
-An alternate renderer [Matter.RenderPixi](http://brm.io/matter-js-docs/classes/RenderPixi.html) is provided as an example of using [Pixi.js](http://www.pixijs.com/) to render a world using WebGL and a scene graph. The features available should match those of `Matter.Render` although sometimes there may be implementation differences.
-
-To make use of this module you must pass it to your engine at its creation:
+A basic example for rendering the bodies in a world as wireframes, given a previously created `Matter.Engine` (see [Getting started](https://github.com/liabru/matter-js/wiki/Getting-started)):
 
 ```js
-Engine.create({
-    render: {
-        element: document.body,
-        controller: Matter.RenderPixi
-    }
-});
-```
+var canvas = document.createElement('canvas'),
+    context = canvas.getContext('2d');
 
-Note that you must include [Pixi.js](http://www.pixijs.com/) in your page to use `Matter.RenderPixi`.
+canvas.width = 800;
+canvas.height = 600;
 
-#### Render options
+document.body.appendChild(canvas);
 
-A number of options may be passed to the renderer:
+(function render() {
+    var bodies = Composite.allBodies(engine.world);
 
-```js
-Engine.create({
-    render: {
-        options: {
-            width: 800,
-            height: 600,
-            background: '#fafafa',
-            wireframeBackground: '#222',
-            hasBounds: false,
-            enabled: true,
-            wireframes: true,
-            showSleeping: true,
-            showDebug: false,
-            showBroadphase: false,
-            showBounds: false,
-            showVelocity: false,
-            showCollisions: false,
-            showAxes: false,
-            showPositions: false,
-            showAngleIndicator: false,
-            showIds: false,
-            showShadows: false
+    window.requestAnimationFrame(render);
+
+    context.fillStyle = '#fff';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    context.beginPath();
+
+    for (var i = 0; i < bodies.length; i += 1) {
+        var vertices = bodies[i].vertices;
+
+        context.moveTo(vertices[0].x, vertices[0].y);
+
+        for (var j = 1; j < vertices.length; j += 1) {
+            context.lineTo(vertices[j].x, vertices[j].y);
         }
+
+        context.lineTo(vertices[0].x, vertices[0].y);
     }
+
+    context.lineWidth = 1;
+    context.strokeStyle = '#999';
+    context.stroke();
+})();
+```
+
+A good place to start with your own rendering is to take a look at the source of [Matter.Render](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) (you can also simply copy it and customise as you require).
+
+## Using Matter.Render
+
+There is an included debug renderer called [Matter.Render](http://brm.io/matter-js/docs/classes/Render.html).
+This module is an optional canvas based renderer for visualising instances of `Matter.Engine`. It is mostly intended for development and debugging purposes, but may also be suitable starting point for simple games. It includes a number of drawing options including wireframe, vector with support for sprites and viewports.
+
+By default `Matter.Render` will only show bodies as wireframes (outlines). This is useful for testing and debugging, but to enable full solid rendering (and sprites if you are using them) you must set `render.options.wireframes = false`.
+
+#### Documentation
+
+See the documentation for [Matter.Render](http://brm.io/matter-js/docs/classes/Render.html).
+
+#### Usage
+
+```js
+var engine = Engine.create();
+
+// ... add some bodies to the world
+
+var render = Render.create({
+    element: document.body,
+    engine: engine,
+    options: options
 });
-```
 
-## Using a custom renderer
-
-While the built in renderers are useful for early development, if you need to do any kind of complex rendering effects you will need a custom renderer.
-
-Use the latest [edge build](https://github.com/liabru/matter-js/blob/master/build/matter.js) of Matter.js if you need this, as rendering has since been better decoupled.
-
-Currently it is required that your renderer module (e.g. `MyRenderer`) at least defines the following:
-
-- a `create` function, that returns an object that at least includes the property `controller = MyRenderer`
-- a `world` function, which is to be called on every step by the engine and contains your rendering code
-
-```js
-var MyRenderer = {
-	create: function() {
-		return { controller: MyRenderer };
-	},
-
-	world: function(engine) {
-		// your code here to render engine.world
-	}
-};
-```
-
-To then use your custom renderer you must pass it to your engine at its creation where `MyRenderer` is the name of your new render module:
-
-```js
-Engine.create({
-    render: {
-        controller: MyRenderer
-    }
-});
-```
-
-Take a look at [Render.js](https://github.com/liabru/matter-js/blob/master/src/render/Render.js) to see how the built in renderer works. It may be helpful to use this module as the basis for your own.
-
-(this is to be made more straight forward in future versions!)
-
-## Using a custom game loop
-
-The engine includes a game loop utility, [Engine.run](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js#L35), to get you started straight away. It automatically handles updating the engine, calling key events and calling the renderer at the correct times.
-
-But if you already have a game loop you wish to use, it is very easy to tick the physics engine when ever you need to, like this:
-
-```js
-Engine.update(engine, delta, correction);
+Engine.run(engine);
+Render.run(render);
 ```
 
 Where:
 
-- `engine` is your `Matter.Engine` to update the state of
-- `delta` is the timestep in ms (e.g. 60FPS = 1000/60 = 16.666)
-- `correction` is the timestep correction factor as described in [Time Corrected Verlet](http://lonesock.net/article/verlet.html) (a value of `1` means no correction)
+- `element` is a container element to insert the canvas into
+- `engine` is a `Matter.Engine` instance
+- `options` is an object specifying render settings, see below (optional)
 
-Note that you may also need to implement [engine events](http://brm.io/matter-js-docs/classes/Engine.html#events), e.g. `beforeTick`, `tick` and `afterTick` etc for all features to work correctly. See the code for [Matter.Runner](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js#L57-L112) on when to fire them.
+You can also just pass a `canvas` instead of a container `element` if you wish to create the canvas yourself.
+
+#### Options
+
+A number of options may be passed to `Matter.Render.create`:
+
+```js
+var render = Render.create({
+    element: document.body,
+    engine: engine,
+    options: {
+        width: 800,
+        height: 600,
+        pixelRatio: 1,
+        background: '#fafafa',
+        wireframeBackground: '#222',
+        hasBounds: false,
+        enabled: true,
+        wireframes: true,
+        showSleeping: true,
+        showDebug: false,
+        showBroadphase: false,
+        showBounds: false,
+        showVelocity: false,
+        showCollisions: false,
+        showSeparations: false,
+        showAxes: false,
+        showPositions: false,
+        showAngleIndicator: false,
+        showIds: false,
+        showShadows: false,
+        showVertexNumbers: false,
+        showConvexHulls: false,
+        showInternalEdges: false,
+        showMousePosition: false
+    }
+});
+```
