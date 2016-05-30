@@ -8,6 +8,8 @@
 
 ## Runner example
 
+### Browser
+
 A basic example for running a previously created `Matter.Engine` (see [Getting started](https://github.com/liabru/matter-js/wiki/Getting-started)):
 
 ```js
@@ -19,6 +21,15 @@ A basic example for running a previously created `Matter.Engine` (see [Getting s
 
 See also the source of [Matter.Runner](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js) that provides some more advanced features.
 
+### Node
+
+When using node you can use [setInterval](https://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg) instead of `window.requestAnimationFrame`:
+
+```js
+setInterval(function() {
+    Engine.update(engine, 1000 / 60);
+}, 1000 / 60);
+```
 ## Using Matter.Runner
 
 There is an included runner called [Matter.Runner](http://brm.io/matter-js/docs/classes/Runner.html).
