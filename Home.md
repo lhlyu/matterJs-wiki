@@ -5,5 +5,6 @@
 1. [Getting started](https://github.com/liabru/matter-js/wiki/Getting-started)
 1. [Running](https://github.com/liabru/matter-js/wiki/Running)
 1. [Rendering](https://github.com/liabru/matter-js/wiki/Rendering)
+1. [References](https://github.com/liabru/matter-js/wiki/References)
 
 _Note: this wiki is a work in progress._
