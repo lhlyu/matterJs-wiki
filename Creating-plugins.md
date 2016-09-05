@@ -3,6 +3,7 @@
 1. [Using plugins](#using-plugins)
 1. [Creating plugins](#creating-plugins)
     1. [Example](#example)
+    1. [Versioning](#versioning)
     1. [Registering](#registering)
     1. [Patching](#patching)
     1. [Using other plugins as dependencies](#using-other-plugins-as-dependencies)
@@ -68,6 +69,22 @@ There are some additional optional properties:
 - `options` _object, optional_ Any global options for the plugin
 
 While the above boilerplate is given as a guide, any equivalent representations exposing these properties should also work (such as [CommonJS](https://webpack.github.io/docs/commonjs.html) or [ES6 modules](http://exploringjs.com/es6/ch_modules.html)).
+
+### Versioning
+
+Plugins are versioned using the [semver](http://semver.org/) approach, making it easier to specify compatibility. Versions may be specified for plugins themselves, the version of Matter.js they are recommended for and the versions of their dependencies.
+
+Versions are strictly of the format `x.y.z` (as in [semver](http://semver.org/)).
+Versions may optionally have a prerelease tag in the format `x.y.z-alpha`.
+Ranges are a strict subset of [npm ranges](https://docs.npmjs.com/misc/semver#advanced-range-syntax).
+Only the following range types are supported:
+
+- Tilde ranges e.g. `~1.2.3`
+- Caret ranges e.g. `^1.2.3`
+- Exact version e.g. `1.2.3`
+- Any version `*`
+
+If a version or range is not specified, then any version (`*`) is assumed to satisfy.
 
 ### Registering
 
