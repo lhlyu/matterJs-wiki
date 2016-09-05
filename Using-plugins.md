@@ -20,21 +20,22 @@ _The following information may be subject to change_
 Plugins allow developers to extend Matter.js with new features in highly modular way.  
 They are designed to be simple to use, create and compose.
 
-They work by installing themselves through patching the `Matter.*` modules directly.
+They work by installing themselves through [patching](https://github.com/liabru/matter-js/wiki/Creating-plugins#patching) the `Matter.*` modules directly.
 This approach is a powerful way to extend virtually any part of the library, in a way that is decoupled and composable.
 
-It is also possible to specify other plugins that must be installed first as dependencies.
+It is also possible to specify other plugins that must be installed first as [dependencies](https://github.com/liabru/matter-js/wiki/Creating-plugins#using-other-plugins-as-dependencies).
 This allows plugins to be reused through composition, for example the `matter-gravity` plugin `uses` the plugin `matter-attractors`.
 
 The plugin system automatically tracks, resolves and installs dependencies recursively, ensuring they are installed only once in an order that satisfies all dependencies (where possible).
 
-Plugins are versioned using the [semver](http://semver.org/) approach, making it easier to specify compatibility. Versions may be specified for plugins themselves, the version of Matter.js they are recommended for and the versions of their dependencies.
+Plugins are [versioned](https://github.com/liabru/matter-js/wiki/Creating-plugins#versioning) using the [semver](http://semver.org/) approach, making it easier to specify compatibility. Versions may be specified for plugins themselves, the version of Matter.js they are recommended for and the versions of their dependencies.
 
 Note that while they share some things in common, plugins are not a new module or package format (as any of these existing formats may be used to build or package a plugin).
 
 ## Using plugins
 
 ### Loading plugins
+
 To use a plugin you must first load its files along with any of its dependencies' files.
 How you do this is up to you, the simplest way is to just use multiple `<script src="...">` tags,
 but it is recommended to use a bundler such as [webpack](https://webpack.github.io/) or [browserify](http://browserify.org/) (but this is not required).
