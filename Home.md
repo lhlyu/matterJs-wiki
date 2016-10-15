@@ -9,14 +9,14 @@
 1. [Rendering](https://github.com/liabru/matter-js/wiki/Rendering)
 1. [Using plugins](https://github.com/liabru/matter-js/wiki/Using-plugins)
 1. [Creating plugins](https://github.com/liabru/matter-js/wiki/Creating-plugins)
+1. [Gallery](https://github.com/liabru/matter-js/wiki/Gallery)
 1. [References](https://github.com/liabru/matter-js/wiki/References)
 
 ## Project links
 
 - [Homepage](http://brm.io/matter-js)
 - [Github](https://github.com/liabru/matter-js)
-- [Demos](https://github.com/liabru/matter-js#demos) 
-- [Gallery](https://github.com/liabru/matter-js#gallery) 
+- [Demos](https://github.com/liabru/matter-js#demos)
 - [Features](https://github.com/liabru/matter-js#features) 
 - [Install](https://github.com/liabru/matter-js#install) 
 - [Usage](https://github.com/liabru/matter-js#usage) 
