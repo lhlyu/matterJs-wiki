@@ -112,21 +112,24 @@ var MyPlugin = {
     install: function(base) {
         base.Engine.create = Matter.chain(
             base.Engine.create,
-            MyPlugin.create
+            function() {
+                MyPlugin.Engine.init(this);
+            }
         );
     },
 
-    create: function(engine) {
-        engine = this || engine;
-        console.log('Engine created:', engine);
+    Engine: {
+        init: function(engine) {
+            // do something with engine
+            console.log('MyPlugin.Engine.init:', engine);
+        }
     }
 };
 
 // ...
 ```
 
-When this plugin is installed, it will log to the console `Engine created: ...` whenever `Matter.Engine.create` is called.  
-The line `engine = this || engine` allows the `create` function to be used outside of a `Matter.chain` if desired.
+When this plugin is installed, it will log to the console `'MyPlugin.Engine.init: ...` whenever `Matter.Engine.create` is called.
 
 Note that by using `Matter.chain` you can also:
 - chain before _or_ after the original method
@@ -171,12 +174,13 @@ Some general guidelines for plugins:
 - document everything (code and readme)
 - build plugins with sharing and reuse in mind
 - don't _add_ new functions to modules or namespaces you don't maintain (only patch existing functions)
+- follow the same namespacing structure as the core (e.g. `MyPlugin.Body.init`, `MyPlugin.Engine.update`)
 - expose and implement your plugin's functions so that they can be called manually
 - avoid relying a particular order of execution where possible
 - the smaller the better
 - but avoid unnecessary dependencies
 - don't modify options or settings in unexpected or undocumented ways
-- check it before you wreck it (use conditionals)
+- use conditionals before operating on possibly undefined properties
 - don't bundle dependencies (document them)
 
 ## Documentation
