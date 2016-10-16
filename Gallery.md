@@ -1,6 +1,6 @@
 > See how others are using matter.js physics
 
-- [Les métamorphoses de Mr. Kalia](http://www.lab212.org/projects/les-metamorphoses-de-mr-kalia) by Lab212 for Google
+- [Les métamorphoses de Mr. Kalia](http://lab212.org/Les-metamorphoses-de-Mr-Kalia) by Lab212 for Google
 - [4ify](http://pauliescanlon.io/4ify-channel-4-rebrand-2/) by Supernatural for Channel 4
 - [Adobe Analytics Live Stream](http://adobefirehose.mediarain.com/) by Rain for Adobe
 - [Blood Sweat & Tools Interactive](http://bloodsweatandtools.discovery.ca/gamebench/) by Jam3 for Discovery
@@ -21,3 +21,8 @@
 - [Labyrinth Game](https://vine.co/v/OjYTwi1gdB1) by Jaume Sanchez Elias
 - [Powermate and Physics](https://vine.co/v/OjXaEzivvJe) by Jaume Sanchez Elias
 - [React Game Kit](https://github.com/FormidableLabs/react-game-kit) by Formidable Labs
+- [Stage.js](http://piqnt.com/stage.js/) by Piqnt
+- [Apple Day](http://www.wearesupernatural.com/2015/10/21/does-physics-matter-js/) by Supernatural
+- [DEO's Love Greeting](http://love.deo.se/) by Kvartetten DEO
+- [Crafty Matter](https://github.com/demipel8/craftymatter) by Demi - Alvaro Martinez de Miguel
+- [Typescript Bindings](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/matter-js) by DefinitelyTyped
