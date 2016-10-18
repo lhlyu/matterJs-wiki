@@ -64,6 +64,8 @@ Also note that plugins may only ever be installed once on a given module.
 Any plugins that could not be resolved will show a red cross ❌, any plugins that threw any warnings will show a 🔶.
 The latter may or may not operate as expected, depending on the reason for the warning.
 
+Make sure that you install plugins as _early as possible_ in your project lifecycle, before creating any function aliases (e.g. `var Body = Matter.Body;`) otherwise those aliases will not refer to the newly patched versions of those functions and your plugins will fail in unexpected ways.
+
 You can see a working example that uses plugins in [examples/attractors.js](https://github.com/liabru/matter-js/blob/plugins/examples/airFriction.js).
 
 Advanced users should check out `Plugin.use` which provides more flexibility.
