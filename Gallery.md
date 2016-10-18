@@ -26,3 +26,12 @@
 - [DEO's Love Greeting](http://love.deo.se/) by Kvartetten DEO
 - [Crafty Matter](https://github.com/demipel8/craftymatter) by Demi - Alvaro Martinez de Miguel
 - [Typescript Bindings](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/matter-js) by DefinitelyTyped
+- [Paper.js + Matter.js](http://superblob.org/) by Andrei Antonescu
+- [Santa Workout](http://christmasexperiments.com/experiments/5) by Bruno Simon
+- [Evolutionary Design of Mechanical Linkages](https://canvas.harvard.edu/files/2030972/download?download_frd=1&verifier=WLwW02l7ae7qin8hgxyOg0nzCP2xrfocXdv2oX7C)  
+by Amanda Ghassaei, Joy Ming
+- [Server-Side Type Profiling for Optimizing
+Client-Side JavaScript Engines](https://www.cs.ucsb.edu/~mkedlaya/DLS15.pdf)  
+by Madhukar N. Kedlaya, Behnam Robatmili, Ben Hardekopf
+- [Shorter Wait Times: The Effects of Various Loading Screens on Perceived Performance](http://infosci.cornell.edu/sites/infosci/files/chi_perceived_performance.pdf)  
+by Jess Hohenstein, Hani Khan, Kramer Canfield, Sam Tung, Rocio Perez Cano 
