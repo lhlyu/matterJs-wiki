@@ -102,7 +102,8 @@ A plugin's `install` function is where it should apply patches that implement th
 Included in the library is a powerful function for patching called `Common.chain` that you should use in most cases.
 This utility returns a new function that executes all chained functions in order, returning the last value that was returned inside the chain.
 
-Using this will also help ensure that you do not break the original function or any other plugins that may also patch it.  
+Using this will also help ensure that you do not break the original function or any other plugins that may also patch it.
+
 Here is an example of the recommended approach:
 
 ```js
@@ -111,14 +112,23 @@ var MyPlugin = {
 
     install: function(base) {
         base.Engine.create = Matter.Common.chain(
+            function(options) {
+                MyPlugin.Engine.beforeCreate(options);
+            },
             base.Engine.create,
             function() {
+                // where `this` is the value returned by `base.Engine.create`
                 MyPlugin.Engine.init(this);
+
+                // unless we return something, the last returned value is maintained
             }
         );
     },
 
     Engine: {
+        beforeCreate: function(options) {
+            console.log('Creating engine with options:', options);
+        },
         init: function(engine) {
             // do something with engine
             console.log('MyPlugin.Engine.init:', engine);
