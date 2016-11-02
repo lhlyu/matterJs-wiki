@@ -110,7 +110,7 @@ var MyPlugin = {
     // ...
 
     install: function(base) {
-        base.Engine.create = Matter.chain(
+        base.Engine.create = Matter.Common.chain(
             base.Engine.create,
             function() {
                 MyPlugin.Engine.init(this);
@@ -131,7 +131,7 @@ var MyPlugin = {
 
 When this plugin is installed, it will log to the console `'MyPlugin.Engine.init: ...` whenever `Matter.Engine.create` is called.
 
-Note that by using `Matter.chain` you can also:
+Note that by using `Common.chain` you can also:
 - chain before _or_ after the original method
 - chain as many functions as you need
 - override the returned value of the chain by using `return`
