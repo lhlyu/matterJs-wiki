@@ -99,10 +99,7 @@ Matter.Plugin.register(MyPlugin);
 
 A plugin's `install` function is where it should apply patches that implement the plugin's features on `Matter.*` modules.
 
-Included in the library is a powerful function for patching called `Common.chain` that you should use in most cases.
-This utility returns a new function that executes all chained functions in order, returning the last value that was returned inside the chain.
-
-Using this will also help ensure that you do not break the original function or any other plugins that may also patch it.
+Included in the library are the functions `Matter.before` and `Matter.after` that you should use for patching in most cases, as they will help ensure that you do not break the original function or any other plugins that may also patch it. 
 
 Here is an example of the recommended approach:
 
@@ -111,27 +108,21 @@ var MyPlugin = {
     // ...
 
     install: function(base) {
-        base.Engine.create = Matter.Common.chain(
-            function(options) {
-                MyPlugin.Engine.beforeCreate(options);
-            },
-            base.Engine.create,
-            function() {
-                // where `this` is the value returned by `base.Engine.create`
-                MyPlugin.Engine.init(this);
+        base.before('Engine.create', function(options) {
+            MyPlugin.Engine.beforeCreate(options);
+        });
 
-                // unless we return something, the last returned value is maintained
-            }
-        );
+        base.after('Engine.create', function() {
+            MyPlugin.Engine.afterCreate(this);
+        });
     },
 
     Engine: {
         beforeCreate: function(options) {
-            console.log('Creating engine with options:', options);
+            console.log('Creating engine for:', options);
         },
-        init: function(engine) {
-            // do something with engine
-            console.log('MyPlugin.Engine.init:', engine);
+        afterCreate: function(engine) {
+            console.log('Engine created:', engine);
         }
     }
 };
@@ -139,18 +130,15 @@ var MyPlugin = {
 // ...
 ```
 
-When this plugin is installed, it will log to the console `'MyPlugin.Engine.init: ...` whenever `Matter.Engine.create` is called.
+When this plugin is installed, it will log to the console before and after `Matter.Engine.create` gets called.
 
-Note that by using `Common.chain` you can also:
-- chain before _or_ after the original method
-- chain as many functions as you need
-- override the returned value of the chain by using `return`
-- inspect the contents of a chain in the property `chain._chained`
-- join chains to keep them flat automatically
+Under the hood, `Matter.before` and `Matter.after` are both helpers for `Common.chain`.
 
-Be careful and respectful when patching:
+Tips for patching:
+- the `arguments` passed are the same for each function in the chain
+- the value of `this` is the last object returned in the chain
 - don't change the original function signature
-- don't return inside a `Common.chain` unless you intend to change the original value
+- don't return inside a `Matter.before` and `Matter.after` unless you intend to change the result
 - when returning, ensure the same type as the patched function
 
 ### Using other plugins as dependencies
