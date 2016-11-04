@@ -11,12 +11,7 @@
 1. [Documentation](#documentation)
 1. [Examples](#examples)
 
-## Notice
-
-**This is a pre-release feature**  
-Branch: [plugins](https://github.com/liabru/matter-js/tree/plugins)  
-Issue and discussion: [#213](https://github.com/liabru/matter-js/issues/213)  
-
+**Experimental**  
 _The following information may be subject to change_
 
 ## Using plugins
