@@ -11,6 +11,7 @@
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
 - [Hype](http://tumult.com/hype/pro/) by Tumult
 - [Carbure Digital Workshop](http://carbure.co/) by Carbure
+- [Department](https://department.se/) by Department
 - [Splash Brothers](http://jambert.co/splash.html) by Joseph Lambert
 - [Air Hockey AI](https://github.com/wybiral/air-hockey) by Davy Wybiral
 - [Magic Keyboard](http://magickeyboard.io/) by Feross
