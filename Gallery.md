@@ -30,6 +30,8 @@
 - [Paper.js + Matter.js](http://superblob.org/) by Andrei Antonescu
 - [Matter.js in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Bartłomiej Bartel
 - [Santa Workout](http://christmasexperiments.com/experiments/5) by Bruno Simon
+- [A Compositional Object-Based Approach To Learning Physical Dynamics](https://openreview.net/pdf?id=Bkab5dqxe)  
+by Michael Chang, Tomer Ullman, Antonio Torralba and Joshua B. Tenenbaum
 - [Evolutionary Design of Mechanical Linkages](https://canvas.harvard.edu/files/2030972/download?download_frd=1&verifier=WLwW02l7ae7qin8hgxyOg0nzCP2xrfocXdv2oX7C)  
 by Amanda Ghassaei, Joy Ming
 - [Server-Side Type Profiling for Optimizing
