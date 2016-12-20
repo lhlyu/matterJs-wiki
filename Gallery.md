@@ -5,7 +5,8 @@
 - [Adobe Analytics Live Stream](http://adobefirehose.mediarain.com/) by Rain for Adobe
 - [Blood Sweat & Tools Interactive](http://bloodsweatandtools.discovery.ca/gamebench/) by Jam3 for Discovery
 - [Oracle OpenWorld Experiment](http://theappslab.com/2016/10/10/how-i-attended-oracle-openworld-2016/) by Ed Jones for Oracle
-- [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon et al
+- [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
+- [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
 - [Goblins and Grottos](http://store.steampowered.com/app/389190) by Psychic Software
 - [masQueLaCara](https://www.instagram.com/p/BCFqCs6JNsq/) by Zach Lieberman for Art Blocks Houston
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
@@ -17,6 +18,7 @@
 - [Magic Keyboard](http://magickeyboard.io/) by Feross
 - [Obie Awards](http://www.obieawards.com/2016-splash/) by Athletics
 - [Leg Work Studio](http://www.legworkstudio.com/home/recognition) by Leg Work
+- [Snowdrop](http://antique-dealer-duck-43581.bitballoon.com/) by Kenneth Cooney
 - [Trophy Smasher](http://grindselect.com/trophy/game) by Kyle Stetz for Grind Select
 - [Pelada](https://gabrielmfadt.wordpress.com/tag/matter-js/) by Gabriel Gianordoli
 - [Labyrinth Game](https://vine.co/v/OjYTwi1gdB1) by Jaume Sanchez Elias
