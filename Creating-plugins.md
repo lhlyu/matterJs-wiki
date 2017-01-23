@@ -135,6 +135,7 @@ Tips for patching:
 - don't change the original function signature
 - don't return inside a `Matter.before` and `Matter.after` unless you intend to change the result
 - when returning, ensure the same type as the patched function
+- don't store references to `Matter.*` functions (as they may reference unpatched versions)
 
 ### Using other plugins as dependencies
 
@@ -166,6 +167,7 @@ Some general guidelines for plugins:
 - version everything
 - document everything (code and readme)
 - build plugins with sharing and reuse in mind
+- don't store references to `Matter.*` functions (as they may reference unpatched versions)
 - don't _add_ new functions to modules or namespaces you don't maintain (only patch existing functions)
 - follow the same namespacing structure as the core (e.g. `MyPlugin.Body.init`, `MyPlugin.Engine.update`)
 - expose and implement your plugin's functions so that they can be called manually
