@@ -169,6 +169,7 @@ Some general guidelines for plugins:
 - build plugins with sharing and reuse in mind
 - don't store references to `Matter.*` functions (as they may reference unpatched versions)
 - don't _add_ new functions to modules or namespaces you don't maintain (only patch existing functions)
+- add custom properties to `obj.plugin` e.g. `body.plugin.newFeature.enabled`
 - follow the same namespacing structure as the core (e.g. `MyPlugin.Body.init`, `MyPlugin.Engine.update`)
 - expose and implement your plugin's functions so that they can be called manually
 - avoid relying a particular order of execution where possible
