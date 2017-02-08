@@ -6,6 +6,7 @@
 - [Blood Sweat & Tools Interactive](http://bloodsweatandtools.discovery.ca/gamebench/) by Jam3 for Discovery
 - [Oracle OpenWorld Experiment](http://theappslab.com/2016/10/10/how-i-attended-oracle-openworld-2016/) by Ed Jones for Oracle
 - [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
+- [SOLACE](http://www.rememberspook.com/) by Evan Boehm for Nexus Interactive Arts
 - [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
 - [Habemus](https://habemus.io/) by Habemus
 - [IsJackWild](http://www.isjackwild.com/) by Jack Wild
