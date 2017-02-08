@@ -7,6 +7,8 @@
 - [Oracle OpenWorld Experiment](http://theappslab.com/2016/10/10/how-i-attended-oracle-openworld-2016/) by Ed Jones for Oracle
 - [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
 - [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
+- [Habemus](https://habemus.io/) by Habemus
+- [IsJackWild](http://www.isjackwild.com/) by Jack Wild
 - [Goblins and Grottos](http://store.steampowered.com/app/389190) by Psychic Software
 - [masQueLaCara](https://www.instagram.com/p/BCFqCs6JNsq/) by Zach Lieberman for Art Blocks Houston
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
