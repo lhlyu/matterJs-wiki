@@ -67,14 +67,12 @@ Advanced users should check out `Plugin.use` which provides more flexibility.
 
 ## List of plugins
 
-The plugin system is still in pre-release stages at the moment, but here are some existing plugins:
-
-- [matter-attractors](https://github.com/liabru/matter-js/blob/plugins/examples/attractorsPlugin.js)
-- [matter-gravity](https://github.com/liabru/matter-js/blob/plugins/examples/gravityPlugin.js)
-- [matter-world-wrap](https://github.com/liabru/matter-js/blob/plugins/examples/worldWrapPlugin.js)
+- [matter-attractors](https://github.com/liabru/matter-attractors)
+- [matter-wrap](https://github.com/liabru/matter-wrap)
 
 If you create a plugin, message [@liabru](https://twitter.com/liabru) and it will be added to this list.
 
 ## Creating plugins
 
 See the wiki page on [Creating Plugins](https://github.com/liabru/matter-js/wiki/Creating-plugins).
+Also check out the [matter-plugin-boilerplate](https://github.com/liabru/matter-plugin-boilerplate).
