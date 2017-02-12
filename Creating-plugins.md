@@ -190,4 +190,4 @@ Check the [documentation](https://github.com/liabru/matter-js/blob/plugins/src/c
 
 ## Examples
 
-See the [list of plugins](https://github.com/liabru/matter-js/wiki/Using-plugins#list-of-plugins) for more code examples of how plugins are implemented.
+See the [list of plugins](https://github.com/liabru/matter-js/wiki/List-of-plugins) for more code examples of how plugins are implemented.
