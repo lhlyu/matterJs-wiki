@@ -3,6 +3,7 @@
 1. [Using plugins](#using-plugins)
 1. [Creating plugins](#creating-plugins)
     1. [Example](#example)
+    1. [Boilerplate](#boilerplate)
     1. [Versioning](#versioning)
     1. [Registering](#registering)
     1. [Patching](#patching)
@@ -22,7 +23,7 @@ To find out how to use and install plugins, see the wiki page on [using plugins]
 
 ### Example
 
-Here is a basic Matter.js plugin boilerplate (a repository will be available soon):
+Here is a basic Matter.js plugin boilerplate:
 
 ```js
 var MyPlugin = {
@@ -64,6 +65,10 @@ There are some additional optional properties:
 - `options` _object, optional_ Any global options for the plugin
 
 While the above boilerplate is given as a guide, any equivalent representations exposing these properties should also work (such as [CommonJS](https://webpack.github.io/docs/commonjs.html) or [ES6 modules](http://exploringjs.com/es6/ch_modules.html)).
+
+### Boilerplate
+
+A complete, production ready boilerplate starter project is available at [matter-plugin-boilerplate](https://github.com/liabru/matter-plugin-boilerplate) which you can fork to start your plugin with all the essentials (build, dev, lint, test, doc, release etc.).
 
 ### Versioning
 
