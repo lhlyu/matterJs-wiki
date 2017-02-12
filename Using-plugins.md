@@ -67,10 +67,7 @@ Advanced users should check out `Plugin.use` which provides more flexibility.
 
 ## List of plugins
 
-- [matter-attractors](https://github.com/liabru/matter-attractors)
-- [matter-wrap](https://github.com/liabru/matter-wrap)
-
-If you create a plugin, message [@liabru](https://twitter.com/liabru) and it will be added to this list.
+See the [list of plugins](https://github.com/liabru/matter-js/wiki/List-of-plugins).
 
 ## Creating plugins
 
