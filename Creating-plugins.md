@@ -42,8 +42,8 @@ var MyPlugin = {
         something: true
     },
 
-    install: function(base) {
-        // patch the Matter namespace here
+    install: function(matter) {
+        // patch `matter` here (not the global Matter object)
     },
 
     // implement your plugin functions etc...
