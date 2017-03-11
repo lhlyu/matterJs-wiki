@@ -7,10 +7,11 @@
   - [Matter.js: Deleting Bodies](https://www.youtube.com/watch?v=4HsVCLakjtQ&list=PLRqwX-V7Uu6akvoNKE4GAxf6ZeBYoJ4uh&index=22)
   - [Matter.js: Constraints](https://www.youtube.com/watch?v=szztTszPp-8&index=23&list=PLRqwX-V7Uu6akvoNKE4GAxf6ZeBYoJ4uh)
   - [Matter.js: Mouse Constraints](https://www.youtube.com/watch?v=W-ou_sVlTWk&list=PLRqwX-V7Uu6akvoNKE4GAxf6ZeBYoJ4uh&index=24)
+  - [Plinko with Matter.js Part 1](https://www.youtube.com/watch?v=KakpnfDv_f0)
+  - [Plinko with Matter.js Part 2](https://www.youtube.com/watch?v=6s4MJcUyaUE)
 - Live streams by Daniel Shiffman
   - [Physics Engines and Matter.js](https://www.youtube.com/watch?v=YKdvQYk7orE)
   - [More Matter.js](https://www.youtube.com/watch?v=BOAMGfGO6Xs)
-  - [Plinko with Matter.js](https://www.youtube.com/watch?v=Iu3M-X1yRFU)
 - [Build games with Matter.js](http://www.pressreader.com/australia/net-magazine-the-voice-of-web-design/20140520/282926678418586) by liabru
 - [Pablo the Flamingo - Case study: The birth of a party animal] (https://medium.com/@gordonnl/pablo-the-flamingo-75a21bf8ea12) by Nathan Gordon
 - [Matter.js - a 2D physics library in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Tizen
