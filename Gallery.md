@@ -7,11 +7,12 @@
 - [Oracle OpenWorld Experiment](http://theappslab.com/2016/10/10/how-i-attended-oracle-openworld-2016/) by Ed Jones for Oracle
 - [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
 - [SOLACE](http://www.rememberspook.com/) by Evan Boehm for Nexus Interactive Arts
+- [masQueLaCara](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0) by Zach Lieberman for Art Blocks Houston
+- [Figma Physics](https://rsms.me/fun/ffysics/) by Rasmus Andersson
 - [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
 - [Habemus](https://habemus.io/) by Habemus
 - [IsJackWild](http://www.isjackwild.com/) by Jack Wild
 - [Goblins and Grottos](http://store.steampowered.com/app/389190) by Psychic Software
-- [masQueLaCara](https://www.instagram.com/p/BCFqCs6JNsq/) by Zach Lieberman for Art Blocks Houston
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
 - [Hype](http://tumult.com/hype/pro/) by Tumult
 - [Carbure Digital Workshop](http://carbure.co/) by Carbure
