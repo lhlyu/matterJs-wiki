@@ -8,6 +8,7 @@
 - [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
 - [SOLACE](http://www.rememberspook.com/) by Evan Boehm for Nexus Interactive Arts
 - [masQueLaCara](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0) by Zach Lieberman for Art Blocks Houston
+- [DAN PARIS](https://dan.paris/about) by DAN PARIS
 - [Figma Physics](https://rsms.me/fun/ffysics/) by Rasmus Andersson
 - [Cedric Pereira](https://www.cedricpereira.com/) by Cedric Pereira
 - [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
