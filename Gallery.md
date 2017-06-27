@@ -11,6 +11,7 @@
 - [DAN PARIS](https://dan.paris/about) by DAN PARIS
 - [Figma Physics](https://rsms.me/fun/ffysics/) by Rasmus Andersson
 - [Cedric Pereira](https://www.cedricpereira.com/) by Cedric Pereira
+- [Timothée Roussilhe](http://timroussilhe.com/) by Timothée Roussilhe
 - [Help Santa](http://helpsanta.panic.lv/) by WARP for Panic
 - [Habemus](https://habemus.io/) by Habemus
 - [IsJackWild](http://www.isjackwild.com/) by Jack Wild
