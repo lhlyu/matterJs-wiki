@@ -17,7 +17,7 @@
 - [Matter.js - a 2D physics library in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Tizen
 - [Matter.js – The Basics for Developing Games](https://www.gamedevelopment.blog/matter-js-basics-developing-games/) by Game Development Blog
 - [Matter.js for Beginners](https://medium.com/@michaelsmykowski/balling-with-matter-js-ff567d2eabf4#.gno2bwig0) by Michael Smykowski
-- [Getting Started With Matter.js: Introduction](https://code.tutsplus.com/tutorials/getting-started-with-matterjs-introduction--cms-28784) by Monty Shokeen
+- [Getting Started With Matter.js](https://code.tutsplus.com/series/getting-started-with-matterjs--cms-1186) by Monty Shokeen
 
 For more info on learning Matter.js, see
 
