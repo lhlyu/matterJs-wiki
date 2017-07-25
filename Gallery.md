@@ -10,6 +10,7 @@
 - [masQueLaCara](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0) by Zach Lieberman for Art Blocks Houston
 - [DAN PARIS](https://dan.paris/about) by DAN PARIS
 - [Computerized Forms](http://computerizedforms.com/our-place-studio-andy-rantzen/) by Daniel Givens
+- [Moving Image](http://movingimage.kr/en) by Arko Art Center
 - [Figma Physics](https://rsms.me/fun/ffysics/) by Rasmus Andersson
 - [Cedric Pereira](https://www.cedricpereira.com/) by Cedric Pereira
 - [Timothée Roussilhe](http://timroussilhe.com/) by Timothée Roussilhe
