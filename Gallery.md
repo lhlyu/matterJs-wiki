@@ -1,4 +1,4 @@
-> See how others are using matter.js physics
+> A list of projects that are using matter.js physics
 
 - [Les métamorphoses de Mr. Kalia](http://lab212.org/Les-metamorphoses-de-Mr-Kalia) by Lab212 for Google
 - [4ify](http://pauliescanlon.io/4ify-channel-4-rebrand-2/) by Supernatural for Channel 4
