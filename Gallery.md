@@ -11,6 +11,7 @@
 - [DAN PARIS](https://dan.paris/about) by DAN PARIS
 - [Computerized Forms](http://computerizedforms.com/our-place-studio-andy-rantzen/) by Daniel Givens
 - [MASSIVE ART](https://www.massiveart.com/) by MASSIVE ART
+- [Tendril](https://tendril.ca/) by Tendril
 - [Moving Image](http://movingimage.kr/en) by Arko Art Center
 - [Figma Physics](https://rsms.me/fun/ffysics/) by Rasmus Andersson
 - [Cedric Pereira](https://www.cedricpereira.com/) by Cedric Pereira
