@@ -13,11 +13,11 @@
   - [Physics Engines and Matter.js](https://www.youtube.com/watch?v=YKdvQYk7orE)
   - [More Matter.js](https://www.youtube.com/watch?v=BOAMGfGO6Xs)
 - [Build games with Matter.js](http://www.pressreader.com/australia/net-magazine-the-voice-of-web-design/20140520/282926678418586) by liabru
+- [Getting Started With Matter.js](https://code.tutsplus.com/series/getting-started-with-matterjs--cms-1186) by Monty Shokeen
 - [Pablo the Flamingo - Case study: The birth of a party animal](https://medium.com/@gordonnl/pablo-the-flamingo-75a21bf8ea12) by Nathan Gordon
 - [Matter.js - a 2D physics library in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Tizen
 - [Matter.js – The Basics for Developing Games](https://www.gamedevelopment.blog/matter-js-basics-developing-games/) by Game Development Blog
 - [Matter.js for Beginners](https://medium.com/@michaelsmykowski/balling-with-matter-js-ff567d2eabf4#.gno2bwig0) by Michael Smykowski
-- [Getting Started With Matter.js](https://code.tutsplus.com/series/getting-started-with-matterjs--cms-1186) by Monty Shokeen
 
 For more info on learning Matter.js, see
 
