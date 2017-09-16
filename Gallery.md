@@ -55,3 +55,4 @@ Client-Side JavaScript Engines](https://www.cs.ucsb.edu/~mkedlaya/DLS15.pdf)
 by Madhukar N. Kedlaya, Behnam Robatmili, Ben Hardekopf
 - [Shorter Wait Times: The Effects of Various Loading Screens on Perceived Performance](http://infosci.cornell.edu/sites/infosci/files/chi_perceived_performance.pdf)  
 by Jess Hohenstein, Hani Khan, Kramer Canfield, Sam Tung, Rocio Perez Cano 
+- [Usage of Physics Engines for UI Design in NexusUI](http://eecs.qmul.ac.uk/~keno/65.pdf) by Chase Mitchusson, Anthony T. Marasco, Jesse Allison
