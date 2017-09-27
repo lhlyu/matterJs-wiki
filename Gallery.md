@@ -8,6 +8,7 @@
 - [Pablo The Flamingo](http://pablotheflamingo.com/) by Nathan Gordon
 - [SOLACE](http://www.rememberspook.com/) by Evan Boehm for Nexus Interactive Arts
 - [masQueLaCara](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0) by Zach Lieberman for Art Blocks Houston
+- [Les Animals](https://lesanimals.digital/#/a-propos) by Les Animals
 - [DAN PARIS](https://dan.paris/about) by DAN PARIS
 - [Computerized Forms](http://computerizedforms.com/our-place-studio-andy-rantzen/) by Daniel Givens
 - [MASSIVE ART](https://www.massiveart.com/) by MASSIVE ART
