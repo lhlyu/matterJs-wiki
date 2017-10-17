@@ -19,6 +19,8 @@
 
 - [matter-tools](https://github.com/liabru/matter-tools) by liabru
   - Tools for creating, testing and debugging worlds.
+- [p5-matter](http://palmerpaul.com/p5-matter/) by pzp1997
+  - Use with p5.js.
 - [react-game-kit](https://github.com/FormidableLabs/react-game-kit) by FormidableLabs
   - Use with react.
 - [@types/matter-js](https://www.npmjs.com/package/@types/matter-js) by DefinitelyTyped
