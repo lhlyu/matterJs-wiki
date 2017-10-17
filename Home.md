@@ -9,7 +9,7 @@
 1. [Rendering](https://github.com/liabru/matter-js/wiki/Rendering)
 1. [Using plugins](https://github.com/liabru/matter-js/wiki/Using-plugins)
 1. [Creating plugins](https://github.com/liabru/matter-js/wiki/Creating-plugins)
-1. [List of plugins and tools](https://github.com/liabru/matter-js/wiki/List-of-plugins)
+1. [List of plugins and tools](https://github.com/liabru/matter-js/wiki/List-of-plugins-and-tools)
 1. [Tutorials](https://github.com/liabru/matter-js/wiki/Tutorials)
 1. [Gallery](https://github.com/liabru/matter-js/wiki/Gallery)
 1. [References](https://github.com/liabru/matter-js/wiki/References)
