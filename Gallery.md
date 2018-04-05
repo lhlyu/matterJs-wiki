@@ -27,6 +27,7 @@
 - [Goblins and Grottos](http://store.steampowered.com/app/389190) by Psychic Software
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
 - [Hype](http://tumult.com/hype/pro/) by Tumult
+- [Visual Chemical Engineering](http://visualchemeng.com/) by Andrew D. McGuire
 - [Carbure Digital Workshop](http://carbure.co/) by Carbure
 - [Department](https://department.se/) by Department
 - [Twitterpile](https://www.twitterpile.net/) by Liam Butler
