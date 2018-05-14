@@ -25,6 +25,7 @@
 - [Habemus](https://habemus.io/) by Habemus
 - [IsJackWild](http://www.isjackwild.com/) by Jack Wild
 - [Multiplayer Pool](https://libertylocked.me) by Wenchao Wang
+- [Falling Balls + DQN](http://web.sfc.keio.ac.jp/~t15704yn/falling/index.html) by seann999
 - [Goblins and Grottos](http://store.steampowered.com/app/389190) by Psychic Software
 - [#GIFMYLIVE](http://bonhommeparis.com/en/projects/arte-gifmylive) by Bonhomme for Arte
 - [Hype](http://tumult.com/hype/pro/) by Tumult
