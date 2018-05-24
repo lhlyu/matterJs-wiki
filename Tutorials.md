@@ -13,6 +13,7 @@
   - [Physics Engines and Matter.js](https://www.youtube.com/watch?v=YKdvQYk7orE)
   - [More Matter.js](https://www.youtube.com/watch?v=BOAMGfGO6Xs)
 - [Build games with Matter.js](http://www.pressreader.com/australia/net-magazine-the-voice-of-web-design/20140520/282926678418586) by liabru
+- [Exploring 2D Physics in JavaScript](https://speakerdeck.com/lonekorean/exploring-2d-physics-in-javascript) by Will Boyd
 - [Getting Started With Matter.js](https://code.tutsplus.com/series/getting-started-with-matterjs--cms-1186) by Monty Shokeen
 - [JavaScript Physics with Matter.js](http://codersblock.com/blog/javascript-physics-with-matter-js/) by Will Boyd
 - [Pablo the Flamingo - Case study: The birth of a party animal](https://medium.com/@gordonnl/pablo-the-flamingo-75a21bf8ea12) by Nathan Gordon
