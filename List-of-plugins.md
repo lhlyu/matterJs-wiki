@@ -31,5 +31,7 @@
   - CraftyJS wrapper.
 - [scala-js-matterjs](https://github.com/DefinitelyScala/scala-js-matterjs) by DefinitelyScala
   - Scala facade.
+- [PhysicsEditor](https://www.codeandweb.com/physicseditor/tutorials/how-to-create-physics-shapes-for-phaser-3-and-matterjs) by Andreas Löw
+  - Polygon editor.
 
 If you create a plugin or tool, message [@liabru](https://twitter.com/liabru) and it will be added to this list.
