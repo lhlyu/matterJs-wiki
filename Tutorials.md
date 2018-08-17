@@ -15,6 +15,7 @@
 - [Build games with Matter.js](http://www.pressreader.com/australia/net-magazine-the-voice-of-web-design/20140520/282926678418586) by liabru
 - [Exploring 2D Physics in JavaScript](https://speakerdeck.com/lonekorean/exploring-2d-physics-in-javascript) by Will Boyd
 - [Getting Started With Matter.js](https://code.tutsplus.com/series/getting-started-with-matterjs--cms-1186) by Monty Shokeen
+- [Modular Game Worlds in Phaser 3 — Meet Matter.js](https://itnext.io/modular-game-worlds-in-phaser-3-tilemaps-4-meet-matter-js-abf4dfa65ca1) by Michael Hadley
 - [JavaScript Physics with Matter.js](http://codersblock.com/blog/javascript-physics-with-matter-js/) by Will Boyd
 - [Pablo the Flamingo - Case study: The birth of a party animal](https://medium.com/@gordonnl/pablo-the-flamingo-75a21bf8ea12) by Nathan Gordon
 - [Matter.js - a 2D physics library in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Tizen
