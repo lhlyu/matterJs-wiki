@@ -57,6 +57,8 @@
 - [Matter.js in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Bartłomiej Bartel
 - [Santa Workout](http://christmasexperiments.com/experiments/5) by Bruno Simon
 - [Happy New Year](http://www.dvtk.us/projets/misc-happynewyear/index.html) by DVTK for Kenzo Paris
+- [Unsupervised Learning of Latent Physical Properties Using Perception-Prediction Networks](http://auai.org/uai2018/proceedings/papers/191.pdf)  
+by David Zheng, Vinson Luo, Jiajun Wu and Joshua B. Tenenbaum
 - [A Compositional Object-Based Approach To Learning Physical Dynamics](https://openreview.net/pdf?id=Bkab5dqxe)  
 by Michael Chang, Tomer Ullman, Antonio Torralba and Joshua B. Tenenbaum
 - [Evolutionary Design of Mechanical Linkages](https://canvas.harvard.edu/files/2030972/download?download_frd=1&verifier=WLwW02l7ae7qin8hgxyOg0nzCP2xrfocXdv2oX7C)  
