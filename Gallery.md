@@ -5,6 +5,7 @@
 - [Adobe Analytics Live Stream](http://adobefirehose.mediarain.com/) by Rain for Adobe
 - [Blood Sweat & Tools Interactive](http://bloodsweatandtools.discovery.ca/gamebench/) by Jam3 for Discovery
 - [Oracle OpenWorld Experiment](http://theappslab.com/2016/10/10/how-i-attended-oracle-openworld-2016/) by Ed Jones for Oracle
+- [Game of the Year](https://gameoftheyear.withgoogle.com/) by Google
 - [Tsum Tsum](https://www.facebook.com/instantgames/333446833797834) by Game Closure for Disney
 - [Sorry I Have No Filter](https://sorryihavenofilter.com/pages/about/) by Sagmeister & Walsh
 - [Paddle Force](https://flobotron.itch.io/paddle-force) by Flobotron
