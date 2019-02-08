@@ -58,6 +58,9 @@
 - [Matter.js in Tizen](https://developer.tizen.org/community/tip-tech/matter.js-2d-physics-library-tizen) by Bartłomiej Bartel
 - [Santa Workout](http://christmasexperiments.com/experiments/5) by Bruno Simon
 - [Happy New Year](http://www.dvtk.us/projets/misc-happynewyear/index.html) by DVTK for Kenzo Paris
+
+### Papers
+
 - [Unsupervised Learning of Latent Physical Properties Using Perception-Prediction Networks](http://auai.org/uai2018/proceedings/papers/191.pdf)  
 by David Zheng, Vinson Luo, Jiajun Wu and Joshua B. Tenenbaum
 - [A Compositional Object-Based Approach To Learning Physical Dynamics](https://openreview.net/pdf?id=Bkab5dqxe)  
@@ -69,4 +72,9 @@ Client-Side JavaScript Engines](https://www.cs.ucsb.edu/~mkedlaya/DLS15.pdf)
 by Madhukar N. Kedlaya, Behnam Robatmili, Ben Hardekopf
 - [Shorter Wait Times: The Effects of Various Loading Screens on Perceived Performance](http://infosci.cornell.edu/sites/default/files/chi_perceived_performance.pdf)  
 by Jess Hohenstein, Hani Khan, Kramer Canfield, Sam Tung, Rocio Perez Cano 
-- [Usage of Physics Engines for UI Design in NexusUI](http://eecs.qmul.ac.uk/~keno/65.pdf) by Chase Mitchusson, Anthony T. Marasco, Jesse Allison
+- [Usage of Physics Engines for UI Design in NexusUI](http://eecs.qmul.ac.uk/~keno/65.pdf)  
+by Chase Mitchusson, Anthony T. Marasco, Jesse Allison
+- [Customised Floating Neighbourhoods: Design Interfaces for Non-experts and Designers to explore Emergent Floating Formations](https://kar.kent.ac.uk/68959/1/AS6305255847485441527340422840_content.pdf)  
+by Buš, Peter and Treyer, Lukas and Tartar, Ayça
+- [Orbital Construction: Swarms of Simple Robots Building Enclosures](https://ieeexplore.ieee.org/abstract/document/8599547)  
+by Andrew Vardy
