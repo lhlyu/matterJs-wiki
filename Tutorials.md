@@ -9,6 +9,7 @@
   - [Matter.js: Mouse Constraints](https://www.youtube.com/watch?v=W-ou_sVlTWk&list=PLRqwX-V7Uu6akvoNKE4GAxf6ZeBYoJ4uh&index=24)
   - [Plinko with Matter.js Part 1](https://www.youtube.com/watch?v=KakpnfDv_f0)
   - [Plinko with Matter.js Part 2](https://www.youtube.com/watch?v=6s4MJcUyaUE)
+  - [Angry Birds with Matter.js](https://www.youtube.com/watch?v=TDQzoe9nslY)
 - Live streams by Daniel Shiffman
   - [Physics Engines and Matter.js](https://www.youtube.com/watch?v=YKdvQYk7orE)
   - [More Matter.js](https://www.youtube.com/watch?v=BOAMGfGO6Xs)
