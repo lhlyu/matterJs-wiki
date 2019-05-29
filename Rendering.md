@@ -7,7 +7,7 @@
     1. [选项](#options)
 
 ## 渲染示例
-在原先入门(查看 [入门](https://github.com/liabru/matter-js/wiki/Getting-started))的源码，以body作为场景的渲染示例：
+在原先[入门](https://github.com/liabru/matter-js/wiki/Getting-started)的源码，以body作为场景的渲染示例：
 
 ```js
 var canvas = document.createElement('canvas'),
