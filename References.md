@@ -1,18 +1,18 @@
-> How it works
+> 如何运作
 
-The engine uses the following techniques:
+引擎使用以下技术:
 
-- Time-corrected position Verlet integrator
-- Adaptive grid broad-phase detection
-- AABB mid-phase detection
-- SAT narrow-phase detection
-- Iterative sequential impulse solver and position solver
-- Resting collisions using resting constraints (Erin Catto, GDC08)
-- Temporal coherence impulse caching and warming
-- Collision pairs, contacts and impulses maintained by a pair manager
-- Approximate Coulomb friction model using friction constraints
-- Constraints solved with the Gauss-Siedel method
-- Fixed or variable time step
-- A basic sleeping strategy
+- 时间校正位置Verlet积分器
+- 自适应网格宽相检测
+- AABB中期检测
+- SAT窄相检测
+- 迭代序列脉冲求解器和位置求解器
+- 使用静止约束休息碰撞（Erin Catto，GDC08）
+- 时间相干冲动缓存和变暖
+- 由配对管理器维护的碰撞对、接触和脉冲
+- 使用摩擦约束的近似库仑摩擦模型
+- 使用Gauss-Siedel方法解决约束
+- 固定或可变时间步长
+- 一种基本的睡眠策略
 
-For more information see the post on [Game physics for beginners](http://brm.io/game-physics-for-beginners/).
+有关更多信息，请参阅[有关初学者的游戏物理学](http://brm.io/game-physics-for-beginners/)文章。
