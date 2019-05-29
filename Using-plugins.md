@@ -1,43 +1,39 @@
-> Using Matter.js plugins 
+> 使用Matter.js插件
 
-1. [Introduction](#introduction)
-1. [Using plugins](#using-plugins)
-    1. [Loading plugins](#loading-plugins)
-    1. [Installing plugins](#installing-plugins)
-1. [List of plugins](#list-of-plugins)
-1. [Creating plugins](#creating-plugins)
+1. [介绍](#introduction)
+1. [使用插件](#using-plugins)
+    1. [加载插件](#loading-plugins)
+    1. [安装插件](#installing-plugins)
+1. [创建列表](#list-of-plugins)
+1. [创建创建](#creating-plugins)
 
-**Experimental**  
-_The following information may be subject to change_
+**实验**  
+_以下信息可能会有所变更_
 
-## Introduction
+## 介绍
 
-Plugins allow developers to extend Matter.js with new features in highly modular way.  
-They are designed to be simple to use, create and compose.
+插件允许开发人员以高度模块化的方式扩展Matter.js的新功能。
+它们的设计易于使用，创建和组合。
 
-They work by installing themselves through [patching](https://github.com/liabru/matter-js/wiki/Creating-plugins#patching) the `Matter.*` modules directly.
-This approach is a powerful way to extend virtually any part of the library, in a way that is decoupled and composable.
+他们通过自己安装工作，[修补](https://github.com/liabru/matter-js/wiki/Creating-plugins#patching) 的Matter.*直接模块。这种方法是一种以分离和可组合的方式扩展库的几乎任何部分的强大方法。
 
-It is also possible to specify other plugins that must be installed first as [dependencies](https://github.com/liabru/matter-js/wiki/Creating-plugins#using-other-plugins-as-dependencies).
-This allows plugins to be reused through composition, for example the `matter-gravity` plugin `uses` the plugin `matter-attractors`.
+也可以指定必须首先作为[依赖项](https://github.com/liabru/matter-js/wiki/Creating-plugins#using-other-plugins-as-dependencies)安装的其他插件。这允许通过组合重用插件，例如matter-gravity插件uses插件matter-attractors。
 
-The plugin system automatically tracks, resolves and installs dependencies recursively, ensuring they are installed only once in an order that satisfies all dependencies (where possible).
+插件系统以递归方式自动跟踪，解析和安装依赖项，确保它们仅以满足所有依赖项的顺序安装一次（如果可能）。
 
-Plugins are [versioned](https://github.com/liabru/matter-js/wiki/Creating-plugins#versioning) using the [semver](http://semver.org/) approach, making it easier to specify compatibility. Versions may be specified for plugins themselves, the version of Matter.js they are recommended for and the versions of their dependencies.
+插件使用[semver](http://semver.org/)方法进行 [版本化](https://github.com/liabru/matter-js/wiki/Creating-plugins#versioning)，从而更容易指定兼容性。可以为插件本身指定版本，建议使用它们的Matter.js版本以及它们的依赖项版本。
 
-Note that while they share some things in common, plugins are not a new module or package format (as any of these existing formats may be used to build or package a plugin).
+请注意，虽然它们共享一些共同点，但插件不是新的模块或包格式（因为任何这些现有格式都可用于构建或打包插件）。
 
-## Using plugins
+## 使用插件
 
-### Loading plugins
+### 加载插件
 
-To use a plugin you must first load its files along with any of its dependencies' files.
-How you do this is up to you, the simplest way is to just use multiple `<script src="...">` tags,
-but it is recommended to use a bundler such as [webpack](https://webpack.github.io/) or [browserify](http://browserify.org/) (but this is not required).
+要使用插件，必须首先加载其文件及其任何依赖项文件。你怎么做，这是你的，最简单的方法是只使用多个<script src="...">标签，但建议使用捆绑如的[webpack](https://webpack.github.io/)或[browserify](http://browserify.org/) (but this is not required)（但不是必需的）。
 
-### Installing plugins
+### 安装插件
 
-Once you have loaded your plugin, you can install it using `Matter.use` like so:
+加载插件后，您可以使用Matter.use如下方式安装它：
 
 ```js
 Matter.use(
@@ -46,30 +42,27 @@ Matter.use(
 );
 ```
 
-Check the console to confirm that they were installed correctly and in order, you should see something like:
+检查控制台以确认它们已正确安装并按顺序，您应该看到类似的内容：
 
 ```
 matter-js: ✅ matter-attractors@0.1.0  ✅ matter-gravity@0.1.0  ✅ matter-world-wrap@0.1.0
 ```
 
-Here we see that `matter-attractors` was also installed, due to it being a dependency of `matter-gravity`. 
-Note that plugins do not usually bundle their dependencies in their distributions, so it is down to you to source and load them.
-Also note that plugins may only ever be installed once on a given module.
+在这里，我们看到它matter-attractors也被安装，因为它是一个依赖matter-gravity。请注意，插件通常不会将它们的依赖项捆绑在它们的发行版中，因此由您来源和加载它们。另请注意，插件只能在给定模块上安装一次。
 
-Any plugins that could not be resolved will show a red cross ❌, any plugins that threw any warnings will show a 🔶.
-The latter may or may not operate as expected, depending on the reason for the warning.
+任何无法解析的插件都会显示红叉❌，任何发出任何警告的插件都会显示🔶。后者可能会或可能不会按预期运行，具体取决于警告的原因。
 
-Make sure that you install plugins as _early as possible_ in your project lifecycle, before creating any function aliases (e.g. `var Body = Matter.Body;`) otherwise those aliases will not refer to the newly patched versions of those functions and your plugins will fail in unexpected ways.
+确保在创建任何函数别名之前尽早在项目生命周期中安装插件（例如var Body = Matter.Body;）否则这些别名将不会引用这些函数的新修补版本，并且插件将以意外方式失败。
 
-You can see a working example that uses plugins in [examples/attractors.js](https://github.com/liabru/matter-js/blob/plugins/examples/airFriction.js).
+您可以在[examples/attractors.js](https://github.com/liabru/matter-js/blob/plugins/examples/airFriction.js)中看到一个使用插件的工作示例。
 
-Advanced users should check out `Plugin.use` which provides more flexibility.
+高级用户应该检查Plugin.use哪些提供了更大的灵活性。
 
-## List of plugins
 
-See the [list of plugins](https://github.com/liabru/matter-js/wiki/List-of-plugins).
+## 插件列表
 
-## Creating plugins
+查看 [插件列表](https://github.com/liabru/matter-js/wiki/List-of-plugins).
 
-See the wiki page on [Creating Plugins](https://github.com/liabru/matter-js/wiki/Creating-plugins).
-Also check out the [matter-plugin-boilerplate](https://github.com/liabru/matter-plugin-boilerplate).
+## 创建插件
+
+请参阅[创建插件](https://github.com/liabru/matter-js/wiki/Creating-plugins)的Wiki页面。还可以查看[问题 - 插件 - 样板](https://github.com/liabru/matter-plugin-boilerplate)。
