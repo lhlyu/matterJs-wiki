@@ -1,16 +1,16 @@
-> Examples of how to run a Matter.js engine
+> 运行一个 Matter.js engine 示例
 
-1. [Runner example](#runner-example)
-1. [Using Matter.Runner](#using-matterrunner)
-    1. [Documentation](#documentation)
-    1. [Usage](#usage)
-    1. [Options](#options)
+1. [运行示例](#runner-example)
+1. [使用 Matter.Runner](#using-matterrunner)
+    1. [文档](#documentation)
+    1. [用法](#usage)
+    1. [选项](#options)
 
-## Runner example
+## 运行示例
 
-### Browser
+### 浏览器
 
-A basic example for running a previously created `Matter.Engine` (see [Getting started](https://github.com/liabru/matter-js/wiki/Getting-started)):
+运行一个之前创建的基本示例 `Matter.Engine` (请看 [入门](https://github.com/liabru/matter-js/wiki/Getting-started)):
 
 ```js
 (function run() {
@@ -19,45 +19,45 @@ A basic example for running a previously created `Matter.Engine` (see [Getting s
 })();
 ```
 
-See also the source of [Matter.Runner](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js) that provides some more advanced features.
+你也可以看其他的资源 [Matter.Runner](https://github.com/liabru/matter-js/blob/master/src/core/Runner.js) 这里提供更高级的一些用法
 
-### Node
+### 节点
 
-When using node you can use [setInterval](https://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg) instead of `window.requestAnimationFrame`:
+当你使用节点时，可以用 [setInterval](https://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg) 替代上面那个方法 `window.requestAnimationFrame`:
 
 ```js
 setInterval(function() {
     Engine.update(engine, 1000 / 60);
 }, 1000 / 60);
 ```
-## Using Matter.Runner
+## 使用 Matter.Runner
 
-There is an included runner called [Matter.Runner](http://brm.io/matter-js/docs/classes/Runner.html).
-This module is an optional utility which provides a game loop, that handles continuously updating a `Matter.Engine` for you. It is intended for development and debugging purposes, but may also be suitable for simple games.
+这里包含一个名叫 [Matter.Runner](http://brm.io/matter-js/docs/classes/Runner.html) 的runner。
+这个模块一个可选的实用程序，它提供了一个游戏循环，它可以持续为你更新`Matter.Engine`。它适合开发和调试，也适合一些简单的游戏。
 
-#### Documentation
+#### 文档
 
-See the documentation for [Matter.Runner](http://brm.io/matter-js/docs/classes/Runner.html).
+文档请查阅 [Matter.Runner](http://brm.io/matter-js/docs/classes/Runner.html).
 
-#### Usage
+#### 用法
 
-The simplest way is to use the `Engine.run` helper:
+`Engine.run` 的简单用法:
 
 ```js
 var engine = Engine.create();
 Engine.run(engine);
 ```
 
-Alternatively you can create a runner directly:
+或者你直接创建一个runner:
 
 ```js
 var runner = Runner.create();
 Runner.run(runner, engine);
 ```
 
-#### Options
+#### 选项
 
-A number of options may be passed to `Matter.Runner.create`:
+`Matter.Runner.create` 可以设置更多的参数:
 
 ```js
 var runner = Runner.create({
